@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { ShopContext } from './shop-context.jsx'; // Ganti dengan path yang sesuai
+import { ShopContext } from './shop-context.jsx';
 import { CartItem } from "./cart-item.jsx";
 import { useNavigate } from "react-router-dom";
-import { useTheme } from "./theme-context.js"; // Pastikan path ini benar
+import { useTheme } from "./theme-context.js"; 
 import "./cart.css";
 
 export const Cart = () => {
