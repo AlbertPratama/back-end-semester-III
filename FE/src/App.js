@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import { ShopContextProvider } from './component/shop-context.jsx';
-import { ThemeProvider } from './component/theme-context.js'; // Pastikan path ini benar
+import { ThemeProvider } from './component/theme-context.js';
 import ProductList from "./component/ProductList.js";
 import AddProduct from "./component/AddProduct.js";
 import EditProduct from "./component/EditProduct.js";
@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <ShopContextProvider>
-        <ThemeProvider> {/* Tambahkan ini */}
+        <ThemeProvider> 
           <Navbar />
             <Routes>
                 <Route path="/" element={<ProductList/>}/>
@@ -19,7 +19,7 @@ function App() {
                 <Route path="edit/:id" element={<EditProduct/>}/>
                 <Route path="cart" element={<Cart/>}/>        
             </Routes>
-        </ThemeProvider> {/* Tambahkan ini */}
+        </ThemeProvider>
       </ShopContextProvider>
     </BrowserRouter>
   );
